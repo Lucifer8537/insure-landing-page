@@ -1,0 +1,37 @@
+<div class="header-container">
+  <img src="../../assets/logo.svg" alt="logo" class="logo" />
+  <ng-container *ngIf="!mobileView">
+    <div class="menu-container">
+      <ng-container *ngFor="let menu of menuList">
+        <div class="submenu">
+          {{ menu }}
+        </div>
+      </ng-container>
+      <button class="btn">{{ btnLabel }}</button>
+    </div>
+  </ng-container>
+  <ng-container *ngIf="mobileView">
+    <img
+      *ngIf="!menu"
+      src="../../assets/icon-hamburger.svg"
+      alt="icon-hamburger"
+      (click)="onClickMenu()"
+    />
+    <img
+      *ngIf="menu"
+      src="../../assets/icon-close.svg"
+      alt="icon-close"
+      (click)="onClickMenu()"
+    />
+  </ng-container>
+</div>
+<div class="menu-container" *ngIf="menu">
+  <div class="menu-value">
+    <ng-container *ngFor="let menu of menuList">
+      <div class="menu">
+        {{ menu }}
+      </div>
+    </ng-container>
+    <button class="btn">{{ btnLabel }}</button>
+  </div>
+</div>

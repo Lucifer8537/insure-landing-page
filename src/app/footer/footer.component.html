@@ -1,0 +1,35 @@
+<div class="footer-container">
+  <div class="footer-header">
+    <img src="../../assets/logo.svg" alt="logo" class="logo" />
+    <div class="social-container">
+      <img
+        src="../../assets/icon-facebook.svg"
+        alt="icon-facebook"
+        class="social-icon"
+      />
+      <img
+        src="../../assets/icon-twitter.svg"
+        alt="icon-twitter.svg"
+        class="social-icon"
+      />
+      <img
+        src="../../assets/icon-pinterest.svg"
+        alt="icon-pinterest.svg"
+        class="social-icon"
+      />
+      <img
+        src="../../assets/icon-instagram.svg"
+        alt="icon-instagram.svg"
+        class="social-icon"
+      />
+    </div>
+  </div>
+  <div class="footer-body">
+    <div class="footer-body-header" *ngFor="let f of footerList">
+      <div class="f-head">{{ f.header }}</div>
+      <div class="footer-body-value" *ngFor="let v of f.value">
+        {{ v }}
+      </div>
+    </div>
+  </div>
+</div>

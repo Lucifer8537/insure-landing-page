@@ -1,0 +1,22 @@
+<div class="main-container">
+  <div class="main">
+    <div *ngIf="!mobileView" class="custom-line"></div>
+
+    <div class="content">
+      <div class="main-heading">
+        {{ mainHeading }}
+      </div>
+      <div class="main-body">
+        {{ mainBody }}
+      </div>
+      <button class="btn">{{ btnLabel }}</button>
+      <img
+        src="../../assets/bg-pattern-intro-right-mobile.svg"
+        alt="bg-pattern-intro-right-mobile"
+        class="bg-mobile-right"
+        *ngIf="mobileView"
+      />
+    </div>
+    <img src="../../assets/image-intro-desktop.jpg" alt="" class="img-intro" />
+  </div>
+</div>

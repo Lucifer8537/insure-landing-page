@@ -1,0 +1,23 @@
+<div class="main-container">
+  <div class="custom-line"></div>
+  <div class="heading">
+    {{ heading }}
+  </div>
+  <div class="feature-container">
+    <div class="feature" *ngFor="let f of featureList">
+      <img src="{{ f.imgSrc }}" alt="icon" class="icon" />
+      <div class="feature-title">{{ f.title }}</div>
+      <div class="feature-data">
+        {{ f.data }}
+      </div>
+    </div>
+  </div>
+  <div class="banner-container">
+    <div class="banner-title">
+      {{ bannerTitle }}
+    </div>
+    <button class="banner-button">
+      {{ btnTitle }}
+    </button>
+  </div>
+</div>

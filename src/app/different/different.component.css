@@ -1,0 +1,126 @@
+.main-container {
+  display: grid;
+  padding: 0px 180px;
+  color: black;
+  font-family: "Karla";
+  margin-top: 320px;
+}
+
+.heading {
+  font-size: 70px;
+  font-family: "DM";
+}
+
+.custom-line {
+  width: 180px;
+  border-top: 2px solid hsl(273, 4%, 51%);
+  margin-bottom: 60px;
+}
+
+.feature-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 80px;
+  justify-content: space-between;
+}
+
+.feature {
+  width: 330px;
+  margin-bottom: 40px;
+}
+
+.feature-title {
+  margin: 25px 0px 15px 0px;
+  font-family: "DM";
+  font-size: 25px;
+}
+
+.feature-data {
+  color: hsl(273, 4%, 51%);
+}
+
+.banner-container {
+  margin: 80px 0px;
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 70px;
+  background: hsl(256, 26%, 20%);
+  background-image: url("../../assets/bg-pattern-how-we-work-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+.banner-title {
+  color: white;
+  font-family: "DM";
+  font-size: 45px;
+  width: 400px;
+  line-height: 1em;
+}
+.banner-button {
+  height: fit-content;
+  margin-top: 30px;
+  background-color: transparent;
+  font-weight: 700;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: 2px solid white;
+  color: white;
+}
+@media (min-width: 769px) {
+  .banner-button:hover {
+    background-color: white;
+    color: hsl(256, 26%, 20%);
+  }
+}
+@media (max-width: 768px) {
+  .main-container {
+    padding: 30% 5%;
+    margin-top: 0;
+    text-align: center;
+  }
+  .custom-line {
+    margin-bottom: 5%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .heading {
+    font-size: 45px;
+  }
+  .feature-container {
+    display: grid;
+    margin-top: 5%;
+  }
+  .feature {
+    width: 90%;
+    margin: 10% auto 0% auto;
+  }
+  .feature-title {
+    margin: 10% 0% 5% 0%;
+  }
+  .feature-data {
+    font-size: 94%;
+    line-height: 1.5em;
+  }
+
+  .banner-container {
+    background-image: url("../../assets/bg-pattern-how-we-work-mobile.svg");
+    margin-top: 30%;
+    display: grid;
+    padding: 10% 5%;
+    margin-bottom: 0;
+  }
+  .banner-title {
+    width: fit-content;
+  }
+
+  .banner-button {
+    width: fit-content;
+    margin: 10% auto 0% auto;
+    padding: 5%;
+  }
+  .banner-button:active {
+    background-color: white;
+    color: hsl(256, 26%, 20%);
+  }
+}

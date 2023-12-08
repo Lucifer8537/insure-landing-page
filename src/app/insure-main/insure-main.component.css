@@ -1,0 +1,106 @@
+.main-container {
+  display: flex;
+  padding: 100px 180px;
+  background: hsl(256, 26%, 20%);
+}
+
+.main {
+  color: white;
+  padding-right: 80px;
+  position: relative;
+  z-index: 1;
+}
+
+.content {
+  width: 50%;
+}
+
+.main-heading {
+  font-family: "DM";
+  font-size: 72px;
+  line-height: 1em;
+}
+
+.main-body {
+  margin-top: 30px;
+  font-family: "Karla";
+  line-height: 1.7em;
+}
+
+.btn {
+  margin-top: 30px;
+  background-color: transparent;
+  font-weight: 700;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: 2px solid white;
+  color: white;
+}
+
+.btn:hover {
+  background-color: white;
+  color: hsl(256, 26%, 20%);
+}
+
+.bottom-left-bg {
+}
+
+.img-intro {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.custom-line {
+  width: 180px;
+  border-top: 2px solid hsl(273, 4%, 51%);
+  margin-bottom: 60px;
+}
+
+.bg-mobile-right {
+  position: absolute;
+  right: 0;
+}
+
+@media (max-width: 768px) {
+  .main-container {
+    padding: 0;
+  }
+  .main {
+    display: grid;
+    padding: 0;
+  }
+  .content {
+    order: 2;
+    width: 90%;
+    padding: 25% 5%;
+    text-align: center;
+    background-image: url("../../assets/bg-pattern-intro-left-mobile.svg");
+    background-repeat: no-repeat;
+  }
+  .main-heading {
+    font-size: 280%;
+  }
+  .main-body {
+    margin-top: 5%;
+    font-size: 105%;
+  }
+  .btn {
+    cursor: none;
+    margin-top: 10%;
+  }
+  .btn:hover {
+    background-color: inherit;
+    color: inherit;
+  }
+  .btn:active {
+    background-color: white;
+    color: hsl(256, 26%, 20%);
+  }
+  .img-intro {
+    width: 100%;
+    order: 1;
+    position: relative;
+  }
+}
